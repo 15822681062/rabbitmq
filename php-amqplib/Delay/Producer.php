@@ -27,14 +27,15 @@ $args = new AMQPTable([
     'x-dead-letter-routing-key' => $queueName
 ]);
 
+//创建订单队列
 $channel->queue_declare($queueName, false, true, false, false, false, $args);
 //绑定死信queue
 $channel->exchange_declare($delayExName, AMQPExchangeType::DIRECT, false, true, false);
 $channel->queue_declare($delayQueueName, false, true, false, false);
 $channel->queue_bind($delayQueueName, $delayExName, $queueName, false);
 
-//100个订单信息，每个订单超时时间都是10s
-for ($i = 0; $i < 100; $i++) {
+//10个订单信息，每个订单超时时间都是100s
+for ($i = 0; $i < 15; $i++) {
     $data = [
         'order_id' => $i + 1,
         'remark'   => 'this is a order test'

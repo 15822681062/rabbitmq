@@ -17,7 +17,7 @@ $exchangeName = 'alone-ex-topic';
 
 $channel->exchange_declare($exchangeName, AMQPExchangeType::TOPIC, false, true, false);
 
-//向交换机和routingkey = alone-ex-queue1中推送10000条数据
+//向交换机和routingkey = alone-ex-queue1中推送10条数据
 for ($i = 0; $i < 10; $i++) {
 	$channel->basic_publish(
 		new AMQPMessage("this is a queue1 message" . $i . ".", [
@@ -27,7 +27,7 @@ for ($i = 0; $i < 10; $i++) {
 		$routingKey1
 	);
 }
-//向交换机和routingkey = alone-ex-queue2中推送10000条数据
+//向交换机和routingkey = alone-ex-queue2中推送10条数据
 for ($i = 0; $i < 10; $i++) {
 	$channel->basic_publish(
 		new AMQPMessage("this is a queue2 message" . $i . ".", [

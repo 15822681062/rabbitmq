@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d183559-fb1d-4426-873d-177b36fd6c6f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/php-amqplib/Delay/Producer.php" beforeDir="false" afterPath="$PROJECT_DIR$/php-amqplib/Delay/Producer.php" afterDir="false" />
-    </list>
+    <list default="true" id="1d183559-fb1d-4426-873d-177b36fd6c6f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1622190417887</updated>
       <workItem from="1622190419407" duration="2106000" />
-      <workItem from="1623046859594" duration="1511000" />
+      <workItem from="1623046859594" duration="2235000" />
     </task>
     <servers />
   </component>

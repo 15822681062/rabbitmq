@@ -20,8 +20,10 @@ $ttl            = 1000 * 100;//订单100s后超时
 $delayExName    = 'delay-order-exchange';//超时exchange
 $delayQueueName = 'delay-order-queue';//超时queue
 $queueName      = 'ttl-order-queue';//订单queue
+// $max_num        = 5; //队列长度最大值
 
 $args = new AMQPTable([
+    // 'x-max-lenght'              => $max_num,
     'x-dead-letter-exchange'    => $delayExName,
     'x-message-ttl'             => $ttl, //消息存活时间
     'x-dead-letter-routing-key' => $queueName

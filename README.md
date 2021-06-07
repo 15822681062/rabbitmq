@@ -29,3 +29,6 @@ exchange的type=direct/topic
 
 ### Delay 目录
 利用message的ttl、死信特性来实现延时队列
+
+### AppCase 目录
+应用案例demo
